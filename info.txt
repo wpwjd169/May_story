@@ -1,0 +1,17 @@
+구글폰트
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+awesome key
+<script src="https://kit.fontawesome.com/3b3af91d34.js" crossorigin="anonymous"></script>
+
+컨버전
+https://svgtopng.com/
+
+구글 color picker
+https://www.google.com/search?q=color+picker&oq=color+picker&aqs=chrome.0.0i67i433j0l4j0i67j0l4.5088j0j15&sourceid=chrome&ie=UTF-8
+
+명명규칙(BEM)
+:Block Element Modifier 방법론.
+Block card__img
+따로 분류시 black card__img--blue(__는 어떤 부분인지, --는 특징.)
