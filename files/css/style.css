@@ -20,26 +20,48 @@ ul {
   list-style: none;
 }
 
+@media (max-width: 991px) {
+  .frame .frame #header {
+    padding: 10%;
+  }
+  .nav {
+    padding: 2%;
+  }
+}
 /* ========================================
    ================header==================
    ======================================== */
-
 #header {
+  position: relative;
+}
+
+.frame #header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 150;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 100px;
+  justify-content: space-between;
+  padding: 150px;
+}
+
+.frame.active {
+  right: 50%;
 }
 
 .logo {
   position: fixed;
   background-repeat: no-repeat;
+  background-position: left;
+  cursor: pointer;
 }
 
 .nav {
-  position: flex;
-  margin-left: auto;
+  position: fixed;
+  right: 0;
+  margin: 25px;
 }
 
 .nav_menu {
@@ -49,7 +71,7 @@ ul {
 }
 
 .nav_menu_item {
-  padding: 30px 30px 0 0;
+  padding: 0 40px 0 0;
   margin: 30px 20px;
   font-size: 40px;
 }
@@ -57,14 +79,19 @@ ul {
 /* ========================================
    ==================home==================
    ======================================== */
-.background_video {
+.home {
+  position: relative;
+  padding: 30%;
+  z-index: -50;
+}
+#home .background_video {
   position: absolute;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100vh;
   top: 0;
   left: 0;
-  z-index: -100;
+  object-fit: cover;
+  z-index: -99999;
 }
 
 .overlay {
@@ -72,17 +99,16 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: darkblue;
+  height: 100vh;
   mix-blend-mode: overlay;
-  opacity: 0.5;
-  z-index: -50;
+  opacity: 0.6;
+  z-index: -10;
 }
 
 .home_text {
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: 40%;
+  left: 38%;
   margin: 0 auto;
   z-index: 10s;
   text-align: center;
@@ -103,3 +129,58 @@ ul {
 /* ========================================
    =================about==================
    ======================================== */
+
+#about {
+  position: relative;
+  padding: 25%;
+  background: rgb(4, 16, 65);
+  background: linear-gradient(
+    175deg,
+    rgba(4, 16, 65, 1) 0%,
+    rgba(37, 83, 179, 1) 46%,
+    rgba(87, 150, 241, 0.8) 100%
+  );
+}
+
+.about_title {
+  position: absolute;
+  top: 10%;
+  left: 1100px;
+  display: flex;
+  text-align: center;
+  font-family: "Stylish", sans-serif;
+  font-size: 180px;
+}
+
+.about_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20% 20%;
+}
+
+.about_text_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  z-index: 30;
+  margin: 20% 50%;
+  padding: 0 30% 0 0;
+}
+
+/* ========================================
+   =================skill==================
+   ======================================== */
+
+#project {
+  position: relative;
+  padding: 20%;
+  background: rgb(87, 150, 241);
+  background: linear-gradient(
+    175deg,
+    rgba(87, 150, 241, 1) 0%,
+    rgba(251, 163, 128, 1) 53%,
+    rgba(255, 251, 233, 1) 100%
+  );
+}

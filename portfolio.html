@@ -8,7 +8,7 @@
 
     
     <!-- css부분 -->
-    <link rel="stylesheet" href="files/css/style.css">
+    <link rel="stylesheet" href="files/css/style.css"> 
 
     <!-- script부분 -->
     <script src="files/js/main.js" defer></script>
@@ -20,21 +20,19 @@
 
 </head>
 <body>
-
-        
+    <section class="frame active">
         <!-- header -->
         <section id="header">
             <div class="logo">
-                <a href="portfolio.html">
-                    <img src="files/Images/logo.png" alt="행성 로고">
-                </a>
+                <a href="portfolio.html"><img src="/files/Images/logo.png"></a>
             </div>
             <div class="nav">
                 <ul class="nav_menu">
-                    <li class="nav_menu_item"><a href="#">Home</a></li>
-                    <li class="nav_menu_item"><a href="#">About</a></li>
-                    <li class="nav_menu_item"><a href="#">Skills</a></li>
-                    <li class="nav_menu_item"><a href="#">Contect</a></li>
+                    <li class="nav_menu_item"><a href="#home">Home</a></li>
+                    <li class="nav_menu_item"><a href="#about">About</a></li>
+                    <li class="nav_menu_item"><a href="#skills">Skills</a></li>
+                    <li class="nav_menu_item"><a href="#project">Project</a></li>
+                    <li class="nav_menu_item"><a href="#contact">Contect</a></li>
                 <ul>
             </div>
         </section>
@@ -52,11 +50,27 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- about -->
-        <section id="about" style="background-color: orange;">
-            <div class="about_img" style="background-color: red;">342342342</div>
-            <div class="about_text">testetsdafdfasdfadsf</div>
+        <section id="about">
+            <div class="about_title">About </div>
+                <div class="about_img" style="background-color: red;">
+                    <img src="files/Images/test.jpg" alt="내 사진">
+                </div>
+                <div class="about_text_item">
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                    <p>1</p><br>
+                </div>
         </section>
 
         <!-- skills -->
@@ -69,20 +83,21 @@
         </section>
 
         <!-- project -->
-        <section class="project">
+        <section id="project">
             <div class="project_1"></div>
             <div class="project_2"></div>
             <div class="project_3"></div>
         </section>
 
         <!-- contact -->
-        <section class="contact">
+        <section id="contact">
             <div class="contact_text"></div>
         </section>
         
         <!-- footer -->
-        <section class="footer">
+        <section id="footer">
         <div class="footer_text"></div>
         </section>
+    </section>
 </body>
 </html>
