@@ -247,7 +247,7 @@ dt {
   margin: 0;
   top: 25%;
   left: 15%;
-  padding: 0 calc(60%) calc(40%) 0;
+  padding: 0 60% 40% 0;
 }
 
 .canvasjs-chart-credit {
@@ -350,6 +350,7 @@ dt {
 }
 
 .contact_text span {
+  text-align: center;
   font-size: 3rem;
 }
 

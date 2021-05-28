@@ -13,8 +13,8 @@ window.onload = function() {
             indexLabelFontSize: 17,
             toolTipContent: "<b>{label}</b> = #percent%",
             dataPoints: [
-                { y: 60, label:"java", color: "blue"},
-                { y: 40, color: "transparent"}
+                { y: 50, label:"java", color: "blue"},
+                { y: 50, color: "transparent"}
             ]
         }]
         
